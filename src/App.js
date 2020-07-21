@@ -21,11 +21,11 @@ function App() {
             <Route path="/" exact>
               <Home />
             </Route>
-            <Route path="/section" exact>
-              <Section />
+            <Route path="/section" exact component={Section}>
+
             </Route>
-            <Route path="/artical" exact>
-              <Article />
+            <Route path="/artical" exact component={Article}>
+
             </Route>
           </Switch>
 
