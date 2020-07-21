@@ -18,15 +18,11 @@ function App() {
 
         <main className="container_lg" >
           <Switch>
-            <Route path="/" exact>
-              <Home />
-            </Route>
-            <Route path="/section" exact component={Section}>
+            <Route path="/" exact component={Home} />
+            <Route path="*" exact component={Home} />
 
-            </Route>
-            <Route path="/artical" exact component={Article}>
-
-            </Route>
+            <Route path="/section" exact component={Section} />
+            <Route path="/artical" exact component={Article} />
           </Switch>
 
 
