@@ -1,0 +1,60 @@
+.article_body{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; 
+    margin-bottom: 20px;
+
+    .article_body_text{
+       max-width: 560px;
+        h2{}
+        p{
+            text-align: justify;
+            line-height: 32px;
+            color: $dark-blue;
+            font-size: map-get($font-sizes, 's' );
+        }
+        .quran{}
+  
+    .article_body_image{
+        max-width: 560px;
+        margin-bottom: 10px;
+         img{
+            background: $grey;
+            border-radius: $border-radius-xl;
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+         }
+        .article_body_imageimage-info{
+            color: $dark-grey;
+            font-size: map-get($font-sizes, 'xs' );
+        }
+    }
+    }
+
+    .article_body_ad{
+        width: 300px;
+        height: 630px;
+        text-align: center;
+       
+        .article_body_ad_info{
+            display: inline-flex;
+            flex-flow: nowrap nowrap;
+            align-items: center;
+            color: $dark-grey;
+            font-size: map-get($font-sizes, 'xxs' );
+            margin: auto auto 10px auto;
+        .aicon-info{
+            margin-left: 5px;
+            font-size: map-get($font-sizes, 's' ); 
+                }
+        }
+        .article_body_ad_ad{
+            background: $grey;
+            border-radius: $border-radius-xl;
+            width: 300;
+            height: 600px;
+        }
+    }
+   
+}

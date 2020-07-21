@@ -1,0 +1,39 @@
+.footer-links{
+    direction: rtl;
+    margin: 0 15px;
+    .footer-links_title{
+     
+        font-size: map-get($font-sizes , 's' );
+        font-weight: bold;
+
+        &::after{
+            content: "";
+            display: block;
+            background-color: $blue;
+            width: 60px;
+            height: 5px;
+            margin-top: 12px;
+            border-radius: $rounded-pill;
+        }
+    }
+
+    ul{ 
+        padding: 0;
+        margin-top: 24px;
+        li{
+            text-decoration: none;
+            list-style-type: none;
+            font-size: map-get($font-sizes , 'xs' );
+            margin-bottom: 9px;
+
+            a{
+                color: $white;
+            }
+        }
+    }
+}
+
+
+
+
+

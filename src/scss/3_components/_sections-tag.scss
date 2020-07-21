@@ -1,0 +1,32 @@
+.sections-tag{
+    display: inline-flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    background-color: $light-blue;
+    color: $blue;
+    font-size: map-get( $font-sizes, 's' );
+    border-radius: $border-radius-xl;
+    height: 40px;
+    margin: auto 0px auto 20px;
+    
+
+    &:first-child{
+        margin: 0;
+    }
+
+    .sections-tag_title{
+            display: inline-block;
+            margin: auto 15px auto 15px;
+        }
+
+     .sections-tag_number{
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background: $lighter-blue;
+            border-radius: $border-radius-circal; 
+            text-align: center;
+            margin-left: 10px;
+        }
+    
+}

@@ -1,0 +1,15 @@
+@each $name, $size in $font-sizes {
+  .font-size-#{$name} {
+    @include set-fontsize($name);
+  }
+}
+
+@each $name, $color in $font-colors {
+  .font-color-#{$name} {
+    @include set-font-color($name);
+  }
+}
+
+.font-bold {
+  font-weight: $font-weight-bold;
+}

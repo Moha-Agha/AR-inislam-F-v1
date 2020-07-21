@@ -1,0 +1,14 @@
+.breadcrumb{
+  display:block;
+  color: $charcoal;
+  font-size: map-get($font-sizes , 'xs' );
+
+  .breadcrumb_first{
+	  color: $charcoal;
+	  opacity: 0.5;
+  }
+  .breadcrumb_second{
+	color: $charcoal;
+	margin: auto 5px;
+  }
+}

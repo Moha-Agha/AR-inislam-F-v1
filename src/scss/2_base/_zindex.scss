@@ -1,0 +1,5 @@
+@each $name, $idx in $zindex {
+  .zindex-#{$name} {
+    z-index: $idx !important;
+  }
+}

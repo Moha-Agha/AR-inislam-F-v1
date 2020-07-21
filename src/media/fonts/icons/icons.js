@@ -1,0 +1,21 @@
+export default {
+    "clock": "aicon-clock",
+    "eye": "aicon-eye",
+    "facebook": "aicon-facebook",
+    "heart": "aicon-heart",
+    "heartLike": "aicon-heartLike",
+    "info": "aicon-info",
+    "link": "aicon-link",
+    "message": "aicon-message",
+    "print": "aicon-print",
+    "search": "aicon-search",
+    "section": "aicon-section",
+    "share": "aicon-share",
+    "spotify": "aicon-spotify",
+    "spotifyLogo": "aicon-spotifyLogo",
+    "twitter": "aicon-twitter",
+    "user": "aicon-user",
+    "whatsapp": "aicon-whatsapp",
+    "youtube": "aicon-youtube",
+    "youtubeLogo": "aicon-youtubeLogo"
+};

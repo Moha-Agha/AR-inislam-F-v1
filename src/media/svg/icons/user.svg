@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg5"
+   version="1.1"
+   viewBox="0 0 27 30"
+   height="30"
+   width="27">
+  <metadata
+     id="metadata11">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs9" />
+  <g
+     transform="translate(-4.5 -3)"
+     id="user">
+    <path
+       d="M31.5,31.5v-3A7.536,7.536,0,0,0,24,21H12a7.536,7.536,0,0,0-7.5,7.5v3a1.5,1.5,0,0,0,3,0v-3A4.521,4.521,0,0,1,12,24H24a4.521,4.521,0,0,1,4.5,4.5v3a1.5,1.5,0,0,0,3,0Z"
+       data-name="Path 44"
+       id="Path_44" />
+    <path
+       d="M25.5,10.5A7.5,7.5,0,1,0,18,18,7.536,7.536,0,0,0,25.5,10.5Zm-3,0A4.5,4.5,0,1,1,18,6,4.521,4.521,0,0,1,22.5,10.5Z"
+       data-name="Path 45"
+       id="Path_45" />
+  </g>
+</svg>

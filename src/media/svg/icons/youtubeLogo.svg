@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg3"
+   version="1.1"
+   viewBox="0 0 49.491 34.595"
+   height="34.595"
+   width="49.491">
+  <metadata
+     id="metadata9">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs7" />
+  <path
+     fill="#040a31"
+     transform="translate(-0.008 -5.423)"
+     d="M48.463,10.765a6.213,6.213,0,0,0-4.308-4.308C40.3,5.423,24.772,5.423,24.772,5.423S9.286,5.4,5.39,6.457a6.21,6.21,0,0,0-4.306,4.308A64.634,64.634,0,0,0,.008,22.739,64.593,64.593,0,0,0,1.085,34.673a6.213,6.213,0,0,0,4.308,4.308c3.854,1.037,19.382,1.037,19.382,1.037s15.484,0,19.382-1.037a6.213,6.213,0,0,0,4.308-4.308A64.385,64.385,0,0,0,49.5,22.739,64.594,64.594,0,0,0,48.463,10.765ZM19.819,30.147V15.31L32.75,22.741Z"
+     id="youtubeLogo" />
+</svg>

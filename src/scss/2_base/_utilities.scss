@@ -1,0 +1,146 @@
+$utilities: (
+  'cursor': (
+    property: cursor,
+    class: cursor,
+    values: (
+      pointer: pointer,
+      default: default,
+    ),
+  ),
+  'height': (
+    // add to existing bootstrap styles
+      property: height,
+    class: h,
+    values: (
+      33: 33.33%,
+      66: 66.66%,
+    ),
+  ),
+  'width': (
+    // add to existing bootstrap
+      property: width,
+    class: w,
+    values: (
+      33: 33.33%,
+      66: 66.66%,
+    ),
+  ),
+  'bottom': (
+    property: bottom,
+    class: b,
+    values: (
+      0: 0,
+      50: 50%,
+    ),
+  ),
+  'left': (
+    property: left,
+    class: l,
+    values: (
+      0: 0,
+      50: 50%,
+    ),
+  ),
+  'right': (
+    property: right,
+    class: r,
+    values: (
+      0: 0,
+      50: 50%,
+    ),
+  ),
+  'top': (
+    property: top,
+    class: t,
+    values: (
+      0: 0,
+      50: 50%,
+    ),
+  ),
+  'transform': (
+    property: transform,
+    class: transform,
+    values: (
+      x-50: translateX(50%),
+      nx-50: translateX(-50%),
+      x-100: translateX(100%),
+      nx-100: translateX(-100%),
+      y-50: translateY(50%),
+      ny-50: translateY(-50%),
+      y-100: translateY(100%),
+      ny-100: translateY(-100%),
+      xy-50: translateX(50%) translateY(50%),
+      nxy-50: translateX(-50%) translateY(-50%),
+      xy-100: translateX(100%) translateY(100%),
+      nxy-100: translateX(-100%) translateY(-100%),
+    ),
+  ),
+);
+
+@include generate($utilities);
+
+.border-transparent {
+  border-color: transparent !important;
+}
+
+.container {
+  $padding: map-get($spacers, 4);
+
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 121rem;
+  padding-right: $padding;
+  padding-left: $padding;
+  width: 100%;
+}
+
+.container--big {
+  max-width: 144rem;
+}
+
+.container--fluid {
+  max-width: none;
+}
+
+.row--equal > [class^='col-'] {
+  align-self: stretch;
+}
+
+.flex-full {
+  display: flex !important;
+
+  > * {
+    flex: 1 1 100% !important;
+  }
+}
+
+.position-half-in-top {
+  position: relative;
+  transform: translateY(-50%);
+}
+
+.reset-list,
+.list-unstyled {
+  @include reset-list();
+}
+
+.no-scroll {
+  overflow: hidden !important;
+  height: 100% !important;
+}
+
+.pull-border-top {
+  margin-top: -$border-width;
+}
+
+.pull-border-bottom {
+  margin-bottom: -$border-width;
+}
+
+.pull-border-left {
+  margin-left: -$border-width;
+}
+
+.pull-border-right {
+  margin-right: -$border-width;
+}

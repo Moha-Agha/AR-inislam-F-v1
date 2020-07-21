@@ -1,0 +1,120 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $page-background;
+  color: $font-default-color;
+  @include set-font('s');
+  margin: 0 ;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+}
+.App-container{
+  display: flex;
+  flex-flow: nowrap row-reverse;
+}
+nav{
+  width: $navbar-width !important;
+}
+main{  
+  width: 93%;
+}
+
+code {
+  background: $grey;
+  color: $red;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+h1,
+.h1 {
+  margin: 0 0 0.8rem 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  @include set-fontsize('xxxl');
+}
+
+h2,
+.h2 {
+  margin: 0 0 0.8rem 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  @include set-fontsize('xxl');
+}
+
+h3,
+.h3 {
+  margin: 0 0 0.8rem 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  @include set-fontsize('xl');
+}
+
+h4,
+.h4 {
+  margin: 0 0 0.8rem 0;
+  font-weight: bold;
+  @include set-fontsize('l');
+}
+
+h5,
+.h5 {
+  margin: 0 0 0.8rem 0;
+  font-weight: bold;
+  @include set-fontsize('m');
+}
+
+h6,
+.h6 {
+  margin: 0 0 0.8rem 0;
+  font-weight: bold;
+  @include set-fontsize('s');
+}
+
+p {
+  margin: 0 0 1.5rem 0;
+}
+
+a {
+  color: $link-color;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    color: $link-color-hover;
+  }
+  &:focus {
+    background: none;
+    outline: none;
+  }
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.a--with-arrow {
+  @include add-icon-after('\F011');
+}
+
+.a--with-arrow-left {
+  @include add-icon-before('\F011');
+}
+
+small {
+  @include set-fontsize('xs');
+}

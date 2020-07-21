@@ -1,0 +1,39 @@
+.whatsapp-promotional{
+
+  min-width: 365px;
+  background-color: $light-blue;
+  padding: 35px 20px 20px 20px;
+  border-radius: $border-radius-xl;
+  text-align: center;
+  direction: rtl;
+
+  h2{
+    font-size: map-get($font-sizes , 's' );
+    color: $charcoal;
+    margin-bottom: 10px;
+  }
+  p{
+    font-size: map-get($font-sizes , 'xs' );
+    color: $charcoal;
+    opacity: 0.8;
+    line-height: 22px;
+    margin-bottom: 30px;
+  }
+
+  .sub-link{
+    display: block;
+    margin-top: 20px;
+    font-size: map-get($font-sizes , 'xs' );
+    color: $blizzard;
+  }
+
+} 
+
+ 
+  
+  
+  
+ 
+  
+ 
+          

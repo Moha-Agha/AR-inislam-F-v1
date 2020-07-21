@@ -1,0 +1,33 @@
+@mixin reset-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  > li {
+    display: block;
+    text-align: left;
+  }
+}
+
+@mixin reset-button() {
+  appearance: none;
+  padding: 0;
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+  -webkit-tap-highlight-color: transparent;
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin reset-select() {
+  // -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}

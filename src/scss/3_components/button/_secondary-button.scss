@@ -1,0 +1,15 @@
+.secondary-button{
+    display: inline-block;
+    background-color: $lighter-blue;
+    color: $blue;
+    font-size: map-get( $font-sizes, 's' );
+    padding: 9px 20px;
+    margin: auto 10px auto 10px;
+    text-align: center;
+    &:first-child{
+        margin: auto 10px  auto 0px;
+    }
+    border-radius: $border-radius-lg;
+    @include add-shadow-s();
+
+}

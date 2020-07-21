@@ -1,0 +1,47 @@
+.news-letter{
+
+   width: 310px;
+
+   p{
+      text-align: center;
+      font-weight: bold;
+      font-size: map-get($font-sizes , 's' );
+      line-height: 30px;
+      margin-bottom: 30px;
+   }
+
+   .news-letter_form{
+      height: 55px;
+      width: 310px;
+      padding: 10px 10px;
+      background-color: $white;
+      border-radius: $rounded-pill;
+
+      button{
+         background-color: $blue;
+         color: $white;
+         font-size: map-get($font-sizes , 's' );
+         font-weight: bold;
+         padding: 8px 13px;
+         border-radius: $rounded-pill;
+      }
+
+      input{
+         border: none;
+         width: 70%;
+         color: $dark-blue;
+         font-size: map-get($font-sizes , 'xs' );
+         direction: rtl;
+
+         &:focus, &:hover, &:active{
+            border: none;
+            outline-width: 0;
+         }
+      }
+   }
+}
+
+
+
+
+

@@ -1,0 +1,74 @@
+@mixin set-icon-font() {
+  display: inline-block;
+  font-family: 'icons' !important; /* Use !important to prevent issues with browser extensions that change fonts */
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  text-rendering: optimizeSpeed; /* Kerning and ligatures aren't needed */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin add-icon-after($content, $font-size: 2em, $padding: 0) {
+  padding-right: $font-size + $padding * 2;
+  position: relative;
+  &:after {
+    @include set-icon-font();
+    content: $content;
+    font-size: $font-size;
+    position: absolute;
+    right: $padding;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@mixin add-icon-before($content, $font-size: 2em, $padding: 0) {
+  padding-left: $font-size + $padding * 2;
+  position: relative;
+  &:before {
+    @include set-icon-font();
+    content: $content;
+    font-size: $font-size;
+    position: absolute;
+    left: $padding;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@mixin add-icon-center($content, $font-size: 2em) {
+  position: relative;
+  &:after {
+    @include set-icon-font();
+    content: $content;
+    font-size: $font-size;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+.aicon-youtube {
+  color: #ff0000;
+}
+
+.aicon-pinterest {
+  color: #e60019;
+}
+
+.aicon-facebook {
+  color: #4267b2;
+}
+
+.aicon-instagram {
+  color: #8a3ab9;
+}
+
+.aicon-twitter {
+  color: #1da1f2;
+}

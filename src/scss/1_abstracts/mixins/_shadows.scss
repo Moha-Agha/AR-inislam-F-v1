@@ -1,0 +1,19 @@
+@mixin add-shadow-0() {
+  box-shadow: none;
+}
+
+@mixin add-shadow-blue() {
+  box-shadow: 0 0.5rem 1.5rem 0 rgba(20, 139, 246, 0.18);
+}
+
+@mixin add-shadow-s() {
+  box-shadow: 0 0.5rem 1.5rem 0 rgba(0, 0, 0, 0.08);
+}
+
+@mixin add-shadow-l() {
+  box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.15);
+}
+
+@mixin add-shadow-xl() {
+  box-shadow: 0 0.5rem 3rem 0 rgba(0, 0, 0, 0.15);
+}

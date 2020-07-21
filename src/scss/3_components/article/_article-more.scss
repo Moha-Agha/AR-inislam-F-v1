@@ -1,0 +1,16 @@
+
+.article_more{
+    max-width: 750px;
+    margin:50px 0 0 0;
+    h2{
+        color: $dark-grey;
+        font-size: map-get($font-sizes, 's' );
+        margin-bottom: 30px;
+    }
+
+    .article_more_blogs{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+}

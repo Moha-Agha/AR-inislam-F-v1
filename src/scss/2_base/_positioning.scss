@@ -1,0 +1,11 @@
+@mixin vertical-flex-strech() {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@mixin horizontal-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

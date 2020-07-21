@@ -1,0 +1,34 @@
+// modified from bootstrap 4
+
+@mixin generate($attributes) {
+  @each $key, $attribute in $attributes {
+    $values: map-get($attribute, values);
+
+    @if type-of($values) == 'string' or type-of(nth($values, 1)) != 'list' {
+      $values: zip($values, $values);
+    }
+
+    @each $value in $values {
+      $properties: map-get($attribute, property);
+
+      @if type-of($properties) == 'string' {
+        $properties: append((), $properties);
+      }
+
+      $property-class: map-get($attribute, class);
+      $property-class: if(
+        $property-class,
+        $property-class,
+        nth($properties, 1)
+      );
+
+      $property-class-modifier: if(nth($value, 1), '-' + nth($value, 1), '');
+
+      .#{$property-class + $property-class-modifier} {
+        @each $property in $properties {
+          #{$property}: #{nth($value, 2)} !important;
+        }
+      }
+    }
+  }
+}

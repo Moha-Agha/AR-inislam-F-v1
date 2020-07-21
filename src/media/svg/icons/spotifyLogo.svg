@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg3"
+   version="1.1"
+   viewBox="0 0 39.66 39.66"
+   height="39.66"
+   width="39.66">
+  <metadata
+     id="metadata9">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs7" />
+  <path
+     fill="#040a31"
+     d="M19.83,0A19.83,19.83,0,1,0,39.66,19.83,19.981,19.981,0,0,0,19.83,0Zm9.124,28.648a1.178,1.178,0,0,1-1.688.392c-4.66-2.865-10.51-3.461-17.456-1.876a1.247,1.247,0,0,1-.351.051,1.226,1.226,0,0,1-.237-2.429C16.757,23.1,23.3,23.8,28.452,26.969a1.193,1.193,0,0,1,.5,1.686Zm2.38-5.453a1.5,1.5,0,0,1-2.086.5,25.717,25.717,0,0,0-19.73-2.276,1.507,1.507,0,0,1-.885-2.877,29.03,29.03,0,0,1,22.308,2.678,1.4,1.4,0,0,1,.392,1.984Zm.2-5.553c-6.346-3.762-16.955-4.158-23-2.272A1.822,1.822,0,0,1,6.21,13.618,1.824,1.824,0,0,1,7.437,11.9c7.038-2.086,18.639-1.693,25.978,2.678a1.925,1.925,0,0,1,.693,2.578,2.084,2.084,0,0,1-2.576.494Z"
+     id="spotifyLogo" />
+</svg>

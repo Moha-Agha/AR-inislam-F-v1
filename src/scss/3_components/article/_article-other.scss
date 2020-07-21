@@ -1,0 +1,33 @@
+.article_other{
+    max-width: 580px;
+     display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+    border-bottom: solid 1px $grey;
+    
+    .article_like{
+        display: inline-flex;
+        flex-flow: row nowrap;
+        align-content: center;
+
+        color: $charcoal;
+        font-size: map-get($font-sizes, 's' );
+        span{
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .aicon-heartLike{
+            color: $red;
+            font-size: map-get($font-sizes, 'l' );
+            margin-left: 10px;
+
+            &:hover{
+                font-size: map-get($font-sizes, 'xl' );
+            }
+        }
+    }
+}

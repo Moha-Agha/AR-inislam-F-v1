@@ -1,0 +1,26 @@
+.register{
+    @include reset-select();
+    direction: rtl;
+    width: 90%;
+    margin: auto;
+
+    h2{
+        font-size: map-get($font-sizes, 's');
+        color: $darker-grey;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+   
+    .user-name{}
+    .email{}
+    .password{}
+
+    p{
+        text-align: center;
+        color: $darker-grey;
+        font-size: map-get($font-sizes, 's');
+    }
+            }
+    
+    

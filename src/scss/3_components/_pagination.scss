@@ -1,0 +1,45 @@
+.pagination{
+   margin: 10px auto 30px auto;
+   max-width: 330px;
+
+   .pagination_button{
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: $border-radius-lg; 
+   }
+   .pagination_active{
+      background-color: $blue;
+      color: $white;
+      cursor: pointer;
+   }
+   .pagination_deactive{
+      background-color: $light-grey;
+      color: $blizzard;
+   }
+
+          ul{
+            display: inline-block;
+            margin: 0 20px;
+            padding: 0;
+            li{
+               list-style-type: none;
+               display: inline-block;
+               margin: auto 5px;
+               a{
+                  font-size: map-get($font-sizes , 'xs' );
+                  color: $dark-blue;
+                  cursor: default;
+               }
+            }
+          }
+
+          .page_active{
+            font-weight: bold;
+            cursor: pointer;
+         }
+}
+
+
+
+
+

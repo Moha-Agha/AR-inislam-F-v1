@@ -1,0 +1,23 @@
+.button{
+    @include reset-button();
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    text-align: center;
+    width: 100%;
+    text-transform: capitalize;
+    font-size: map-get($font-sizes, 's');
+    border-radius: $border-radius-lg;
+            }
+  button {
+      color: $white  ;
+  } 
+ .button-creat{
+     background: $green;
+     margin:40px 0 20px 0;  
+    }
+
+ .button-login{
+     background: $blue;
+     margin: 20px 0 0 0;
+    }
+    

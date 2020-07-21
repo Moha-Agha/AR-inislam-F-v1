@@ -1,0 +1,9 @@
+@import "../2_base/0_index.scss";
+
+
+.header-of-section{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,34 @@
+.header-info{
+
+  background-color: $white;
+  padding: 30px 30px 20px 30px;
+  border-radius: $border-radius-xl;
+  margin: auto auto auto 20px ;
+  direction: rtl;
+
+  h2{
+    font-size: map-get($font-sizes , 's' );
+    color: $blizzard;
+    margin-bottom: 20px;
+  }
+  h1{
+    font-size: map-get($font-sizes , 'l' );
+    color: $charcoal;
+    margin-bottom: 30px;
+  }
+  p{
+    font-size: map-get($font-sizes , 'xs' );
+    color: $charcoal;
+    opacity: 0.9;
+    line-height: 30px;
+  }
+} 
+
+ 
+  
+  
+  
+ 
+  
+ 
+          

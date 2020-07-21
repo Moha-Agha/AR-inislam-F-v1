@@ -1,0 +1,28 @@
+.input{
+    position: relative;
+    width: 100%;
+    margin-bottom: 25px;
+
+    label{
+        position: absolute;
+        top: -10px;
+        margin: auto 10px;
+        padding-left:  8px;
+        padding-right:  8px;
+        color: $darker-grey;
+        font-size: map-get($font-sizes, 'xs');
+        background-color: $white; 
+    }
+
+    input{
+        border: solid 1px $grey;
+        border-radius: 10px;
+        height: 40px;
+        width: 100%;
+        padding: 0 15px;
+        font-size:  map-get($font-sizes, 'm');
+    }
+
+            }
+    
+    

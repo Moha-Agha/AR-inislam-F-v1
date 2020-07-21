@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'icons';
+  src: url('icons.eot'); /* IE9 Compat Modes */
+  src: url('icons.eot?iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('icons.woff2') format('woff2'), /* Edge 14+, Chrome 36+, Firefox 39+, some mobile */
+    url('icons.woff') format('woff'),  /* IE 9+, Edge, Firefox 3.6+, Chrome 5+, Safari 5.1+ */
+    url('icons.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('icons.svg') format('svg'); /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="aicon-"], [class*=" aicon-"] {
+  font-family: 'icons' !important; /* Use !important to prevent issues with browser extensions that change fonts */
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  text-rendering: optimizeSpeed; /* Kerning and ligatures aren't needed */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.aicon-clock:before {
+  content: '\F00D'
+}
+.aicon-eye:before {
+  content: '\F000'
+}
+.aicon-facebook:before {
+  content: '\F001'
+}
+.aicon-heart:before {
+  content: '\F002'
+}
+.aicon-heartLike:before {
+  content: '\F00F'
+}
+.aicon-info:before {
+  content: '\F00E'
+}
+.aicon-link:before {
+  content: '\F010'
+}
+.aicon-message:before {
+  content: '\F011'
+}
+.aicon-print:before {
+  content: '\F012'
+}
+.aicon-search:before {
+  content: '\F003'
+}
+.aicon-section:before {
+  content: '\F004'
+}
+.aicon-share:before {
+  content: '\F005'
+}
+.aicon-spotify:before {
+  content: '\F006'
+}
+.aicon-spotifyLogo:before {
+  content: '\F007'
+}
+.aicon-twitter:before {
+  content: '\F00C'
+}
+.aicon-user:before {
+  content: '\F009'
+}
+.aicon-whatsapp:before {
+  content: '\F013'
+}
+.aicon-youtube:before {
+  content: '\F00A'
+}
+.aicon-youtubeLogo:before {
+  content: '\F00B'
+}

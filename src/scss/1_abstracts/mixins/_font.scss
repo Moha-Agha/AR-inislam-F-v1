@@ -1,0 +1,32 @@
+@mixin set-font($size: 's') {
+  font: {
+    family: $font-family-base;
+    size: map-get($font-sizes-mobile, $size);
+  }
+  line-height: map-get($font-line-heights-mobile, $size);
+
+  @include media-breakpoint-up('sm') {
+    font: {
+      size: map-get($font-sizes, $size);
+    }
+    line-height: map-get($font-line-heights, $size);
+  }
+}
+
+@mixin set-font-color($color: $dark-blue) {
+  color: map-get($font-colors, $color);
+}
+
+@mixin set-fontsize($size: 's') {
+  font: {
+    size: map-get($font-sizes-mobile, $size);
+  }
+  line-height: map-get($font-line-heights-mobile, $size);
+
+  @include media-breakpoint-up('sm') {
+    font: {
+      size: map-get($font-sizes, $size);
+    }
+    line-height: map-get($font-line-heights, $size);
+  }
+}

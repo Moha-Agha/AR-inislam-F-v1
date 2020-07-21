@@ -1,0 +1,70 @@
+.main-motivator{
+    @include reset-select();
+    width: calc( 100% - 80px);
+    height: 400px;
+    margin: 3rem 4rem 3rem 4rem;
+    position: relative;
+    direction: rtl;
+    border-radius: $border-radius-xl;
+    overflow: hidden;
+
+    .photo-by{
+        position: absolute;
+        bottom: 15px;
+        margin: 0 10% 0 10% ;
+        z-index: 3;
+        color: $darker-grey;
+        opacity: 0.35;
+        font-size: map-get($font-sizes, 'xxxs');
+    }
+    .motivator-content{
+      position: absolute;
+      z-index: 3;
+      margin: 200px 10% auto 10% ;
+      
+      h1{
+          font-size: map-get($font-sizes, 'l' );
+          color: $white;
+          line-height: map-get($font-line-heights ,'m' );
+      }
+
+      button{
+          font-size: map-get($font-sizes, 'm' );
+          color: $white;
+          text-transform: capitalize;
+          font-weight: $font-weight-bold;
+          background: $blue;
+          padding: 10px 35px;
+          margin-top: 10px;
+          border-radius: $border-radius-lg;
+          cursor: pointer;
+
+          &:hover{
+              background: $blue1;
+          }
+
+          &:active{
+              background: $blue-1;
+          }
+      }
+    }
+    .linear-gradient{
+        position: absolute;
+        z-index: 2;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: rgb(4,10,49);
+        background: linear-gradient(90deg, rgba(4,10,49,0) 50%, rgba(4,10,49,0.5326505602240896) 70%, rgba(4,10,49,1) 100%);
+    }
+    img{
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        // margin-left: -6%;
+        /* transform: scale(1.7); */
+        object-fit: cover;
+    }
+}    
+          

@@ -1,0 +1,93 @@
+.article_info{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+ .article_author{
+    display: flex;
+    flex-flow: row nowrap;
+   
+    img{
+        width: 57px;
+        height: 57px;
+        background: $grey;
+        border-radius: $rounded-pill;
+        margin-left: 16px;
+        object-fit: cover;
+    }
+    .article_author_name{
+        color: $dark-blue;
+        font-size: map-get($font-sizes, 'xs' );
+        font-weight: 700;
+
+        &::before{
+            content: "";
+            width: 30px;
+            height: 5px;
+            display: block;
+            background-color: $charcoal;
+            opacity: 0.2;
+            margin: 8px 0 5px auto ;
+            border-radius: $rounded-pill;
+        }
+    }
+    .article_author_publish-date{
+        color: $darker-grey;
+        font-size: map-get($font-sizes, 'xs' );
+    }
+}
+
+.article_reading-duration {
+    background: $blizzard;
+    border-radius: $rounded-pill;
+    padding: 8px 15px;
+    color: $white;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    text-align: center;
+
+    .aicon-clock{
+        display: inline-block;
+        color: $white;
+        font-size: map-get($font-sizes, 's' );
+    }
+    span{
+        font-size: map-get($font-sizes, 'xs' );
+        margin-right: 6px;  
+    }
+}
+
+.article_send-me-to{
+
+    background: $dark-blue;
+    border-radius: $rounded-pill;
+    padding: 8px 15px;
+    margin-right: 10px;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    text-align: center;
+    font-size: map-get($font-sizes, 'xs' );
+
+    a{       
+        display: inline-flex;
+        flex-flow: row nowrap;
+        align-items: center;
+      i{
+        display: inline-block;
+        font-size: map-get($font-sizes, 'm' );
+      }
+      span{   
+        color: $white;
+        margin-right: 6px;  
+         } 
+         .aicon-spotify{
+            color: $green;  
+         } 
+    }  
+}   
+
+}
