@@ -2,6 +2,7 @@
   "name": "mosp",
   "version": "0.2.0",
   "private": true,
+  "homepage": "",
   "dependencies": {
     "axios": "^0.19.2",
     "bootstrap": "^4.5.0",
