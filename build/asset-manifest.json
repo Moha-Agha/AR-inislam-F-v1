@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.afa7c094.chunk.css",
+    "main.js": "/static/js/main.0302d9af.chunk.js",
+    "main.js.map": "/static/js/main.0302d9af.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.20bceffb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.20bceffb.js.map",
+    "static/js/2.ae54058a.chunk.js": "/static/js/2.ae54058a.chunk.js",
+    "static/js/2.ae54058a.chunk.js.map": "/static/js/2.ae54058a.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.96fd5a7ef04234d977c7da041a15044e.js": "/precache-manifest.96fd5a7ef04234d977c7da041a15044e.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.afa7c094.chunk.css.map": "/static/css/main.afa7c094.chunk.css.map",
+    "static/js/2.ae54058a.chunk.js.LICENSE.txt": "/static/js/2.ae54058a.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/static/media/icons.c39db372.eot",
+    "static/media/logo_footer.png": "/static/media/logo_footer.29c61cb0.png",
+    "static/media/logo_nav.png": "/static/media/logo_nav.d1287bc7.png",
+    "static/media/michael.png": "/static/media/michael.237be119.png",
+    "static/media/new_in_islam.jpg": "/static/media/new_in_islam.6c6ba267.jpg",
+    "static/media/new_in_islam2.jpg": "/static/media/new_in_islam2.103e8263.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.20bceffb.js",
+    "static/js/2.ae54058a.chunk.js",
+    "static/css/main.afa7c094.chunk.css",
+    "static/js/main.0302d9af.chunk.js"
+  ]
+}

@@ -21,7 +21,7 @@
   "scripts": {
     "build:icons": "svg2fonts src/media/svg/icons --prefix aicon- -o src/media/fonts/icons",
     "start": "react-scripts start",
-    "build": "CI= react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
