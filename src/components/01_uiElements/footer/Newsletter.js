@@ -3,6 +3,7 @@ import React from "react";
 const Newsletter = () => {
   return (
     <div className="news-letter">
+      <h2>القائمة البريدية</h2>
       <p>
         ليصلك كل جديد من الموقع
         <br />

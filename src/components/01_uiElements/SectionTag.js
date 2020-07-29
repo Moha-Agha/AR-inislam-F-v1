@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-const SectionsTag = ({ title = "اسم القسم" }) => {
+const SectionTag = ({ title = "اسم القسم" }) => {
   return (
     <a href="section" className="sections-tag">
       <span className="sections-tag_number">25</span>
@@ -9,4 +9,4 @@ const SectionsTag = ({ title = "اسم القسم" }) => {
   );
 };
 
-export default SectionsTag;
+export default SectionTag;

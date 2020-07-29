@@ -186,3 +186,209 @@
         right: 139px; 
     }    
           
+
+
+    
+/* ----------- Google Pixel ----------- */
+
+    /* Portrait */
+    @media screen 
+    and (device-width: 360px) 
+    and (device-height: 640px) 
+    and (-webkit-device-pixel-ratio: 3) 
+    and (orientation: portrait) {
+
+    }
+
+    /* Landscape */
+    @media screen 
+    and (device-width: 360px) 
+    and (device-height: 640px) 
+    and (-webkit-device-pixel-ratio: 3) 
+    and (orientation: landscape) {
+
+    }
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+    /* Portrait */
+    @media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 667px) 
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) { 
+
+    }
+
+    /* Landscape */
+    @media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 667px) 
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) { 
+
+    }
+
+
+ /* ----------- table ----------- */
+
+    /* Portrait */
+    /* Declare the same value for min- and max-width to avoid colliding with desktops */
+    /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+    @media only screen 
+    and (min-width: 360px) 
+    and (max-width: 768px) {
+
+        .navbar{
+            left: 0;
+            top: auto;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-content: center;
+            height: 70px;
+            @include add-shadow-l;
+            transition:  background-color 0.3s , box-shadow 0.3s  ;
+
+            .logo{
+               display: none;
+                    }
+
+             .navbar_items{
+                 position: relative;
+                 margin-top: 10vh;
+                 height: 70%;
+                 background: inherit;
+                .navbar_item{
+                    margin-bottom: 1.3vh;
+                     .navbar_item-level1{
+                         display: flex;
+                         flex-flow: column nowrap;
+                         align-items: center; 
+                         div{
+                             width: 60px;
+                             height: 60px;
+                             background: $lighter-grey;
+                             border-radius: 50%;
+                             margin-bottom: 5px;
+                             display: flex;
+                            align-items: center;
+                             justify-content: center;
+                             transition: background 0.15s ease;
+                             i{
+                                 font-size: 28px;
+                                 color: $charcoal;
+                                 transition: color 0.15s ease;           
+                             } 
+                             .aicon-user{
+                                margin-top: 5px;
+                             }         
+                         }
+                         p{
+                             font-size: map-get($font-sizes, 's');
+                             font-weight: $font-weight-bold;
+                             color: $dark-grey;
+                             transition: color 0.15s ease;
+                         }
+            
+                         &:hover{
+                             div{
+                                 background-color: $grey;
+                                 i{
+                                     color: $blue;
+                                 }
+                             }
+                             p{
+                                 color: $darker-grey;
+                             }
+                         }
+                              }
+                     .navbar_item-level2{
+                         position: absolute;
+                         top: 0;
+                         right: -400px; 
+                         z-index: -1;
+                         width: ceil($flyout-width-open - 20px);
+                         height: 65%;
+                         transition: right 0.3s;
+                         .Content{
+            
+                                 }
+                               }
+                           }
+                        }
+                 
+            .navbar_container_language{
+                display: none;
+            }
+        }
+        
+        .is-open-navbar{
+            background-color: $lighter-grey;
+            @include add-shadow-0;
+        
+        
+            .navbar_items{   
+               .navbar_item{
+                    .navbar_item-level1{
+                        div{
+                            background:$grey;
+                        }
+                    }
+                }
+            }
+        
+            .navbar_language {
+                background-color: $grey;
+            }
+        }
+        
+        
+        .is-open-navbar_item{
+            .navbar_item-level1{
+                div{
+                    background: $blue !important ;
+                    i{
+                        color: $white !important ;
+                    }          
+                }
+                p{
+                    color: $darker-grey !important ;
+                }
+            }
+            
+            .navbar_item-level2{
+                animation: 0.3s level2 cubic-bezier(0.6, 0, 0.2, 0.99) forwards;
+                @keyframes level2 {
+                  0% {
+                    display: none;
+                  }
+                  20%{
+                    display: block ;
+                  }
+                  100% {
+                    right: ceil($navbar-width - 30px);
+                    margin-right: 27%;
+                  }
+                }
+                      }
+                 }
+                  
+                
+            .flyout-bg{
+                display: none;
+                position: fixed;
+                z-index: 88888;
+                right: -400px;
+                width: $flyout-width-open;
+                height: 100%;
+                background-color: $white;
+                transition: right 0.2s ;
+            }    
+            .is-open-flyout-bg{
+                right: 139px; 
+            }  
+
+
+    }
+
+  

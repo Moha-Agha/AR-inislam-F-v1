@@ -1,3 +1,5 @@
+/* ----------- desktop ----------- */
+
 .sections-tag{
     display: inline-flex;
     flex-flow: row nowrap;
@@ -30,3 +32,52 @@
         }
     
 }
+
+
+/* ----------- tablet ----------- */
+@media only screen
+and (min-width: 768px)
+and (max-width: 1280px)  { 
+
+
+
+ } 
+/* ----------- phone ----------- */ 
+@media only screen
+and (min-width: 320px) 
+and (max-width: 767px) { 
+
+    .sections-tag{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        background-color: $light-blue;
+        color: $blue;
+        font-size: map-get( $font-sizes, 's' );
+        border-radius: $border-radius-xl;
+        height: 40px;
+        margin: auto 0px auto 20px;
+        
+    
+        &:first-child{
+            margin: 0;
+        }
+    
+        .sections-tag_title{
+                display: inline-block;
+                margin: auto;
+                font-size: map-get($font-sizes, 'xs' );
+            }
+    
+         .sections-tag_number{
+                display: none;
+            }
+        
+    }
+
+    .sections-tags_mobil{
+        width: 87%;
+        margin: auto 20px;
+    }
+
+ }

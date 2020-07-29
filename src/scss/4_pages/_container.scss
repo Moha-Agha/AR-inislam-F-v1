@@ -1,0 +1,43 @@
+@import "../2_base/0_index.scss";
+
+/* ----------- desktop ----------- */
+
+
+    .container-app{
+        margin: 30px auto;
+        position: relative; 
+        width: map-get($container-max-widths , 'lg');
+        
+    }
+
+   
+
+/* ----------- tablet ----------- */
+
+@media only screen 
+and (min-width: 768px) 
+and (max-width: 1280px)  {
+
+    .container-app{
+        margin: 30px auto;
+        position: relative; 
+        width: map-get($container-max-widths , 'md'); 
+        
+    }
+
+    }
+
+/* ----------- phone ----------- */
+
+@media only screen 
+and (min-width: 320px) 
+and (max-width: 767px) { 
+
+    .container-app{
+        margin: 30px auto;
+        position: relative; 
+        width: map-get($container-max-widths , 'sm'); 
+    }
+
+}
+

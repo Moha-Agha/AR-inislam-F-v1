@@ -1,34 +1,73 @@
-.site-info{
-   position: relative;
-   width: 270px;
-   text-align: center;
-   direction: rtl;
- 
-   .logo{
-      display: block;
-      height: 57px;
-      width: 150px;
-      margin:0 0 20px auto;
-      position: relative;
-        img{
-               height: 57px;
-               width: 153px;
-               object-fit: cover;
-               margin: auto;
-            }
-          }
+/* ----------- desktop ----------- */
 
-          p{
-           display: block;
-           font-size: map-get($font-sizes , 'xs' );
-           line-height: 22px;
-           text-align: justify;
-           text-justify: inter-word;
-          }
-   
+.site-info{
+  position: relative;
+  width: 270px;
+  text-align: center;
+  direction: rtl;
+  margin: auto;
+
+  .logo{
+     display: block;
+     height: 57px;
+     width: 150px;
+     margin:0 0 20px auto;
+     position: relative;
+       img{
+              height: 57px;
+              width: 153px;
+              object-fit: cover;
+              margin: auto;
+           }
+         }
+
+         p{
+          display: block;
+          font-size: map-get($font-sizes , 'xs' );
+          line-height: 22px;
+          text-align: justify;
+          text-justify: inter-word;
+         }
+  
 }
 
 
 
+/* ----------- tablet ----------- */
 
+@media only screen 
+and (min-width: 768px) 
+and (max-width: 1280px)  {
+
+  .site-info{
+    width: 370px;
+    margin: auto;
+    .logo{
+       margin:0 auto 20px auto;
+           }
+           p{
+            text-align: center;
+           }
+ }
+
+}
+
+/* ----------- phone ----------- */
+
+@media only screen 
+and (min-width: 320px) 
+and (max-width: 767px) { 
+
+  .site-info{
+    width: 300px;
+    margin: auto;
+    .logo{
+       margin:0 auto 20px auto;
+           }
+           p{
+            text-align: center;
+           }
+ }
+
+}
 

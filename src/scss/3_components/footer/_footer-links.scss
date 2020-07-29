@@ -1,3 +1,6 @@
+/* ----------- desktop ----------- */
+
+
 .footer-links{
     direction: rtl;
     margin: 0 15px;
@@ -32,6 +35,80 @@
         }
     }
 }
+
+.footer_footer-links_line{
+    display: none;
+}
+
+.mobile-extra-links{
+    display: none;
+}
+
+
+/* ----------- tablet ----------- */
+@media only screen
+and (min-width: 768px)
+and (max-width: 1280px)  { 
+
+    .footer-links{
+        margin: 30px auto;
+    }
+
+    .footer_footer-links_line{
+        display: block;
+        width: 85%;
+        height: 1px;
+        background-color: $white;
+        opacity: 0.6;
+        margin: auto auto 40px auto;
+    }
+
+ } 
+/* ----------- phone ----------- */ 
+@media only screen
+and (min-width: 320px) 
+and (max-width: 767px) { 
+
+
+    .footer-links{
+        margin: 30px auto;
+    }
+
+    .footer_footer-links_line{
+        display: block;
+        width: 85%;
+        height: 1px;
+        background-color: $white;
+        opacity: 0.6;
+        margin: auto auto 0px auto;
+    }
+
+    .mobile-extra-links{
+        display: block;
+        margin-top: 10px;
+
+        .footer-links_title{
+            display: none;
+        }
+
+        ul{ 
+            margin-top: 0px;
+            li{
+                display: inline-block;
+                margin: auto 10px;
+                font-size: map-get($font-sizes , 'xs' );
+            }
+        }
+
+    }
+
+ }
+
+
+
+
+
+  
 
 
 

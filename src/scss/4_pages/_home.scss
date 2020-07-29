@@ -1,17 +1,6 @@
 @import "../2_base/0_index.scss";
 
 
-.container_lg{
-    margin: 30px auto;
-    position: relative;
-    width: map-get($container-max-widths , 'lg'); 
-}
-.container_xl{
-    margin: 30px auto;
-    position: relative; 
-    width: map-get($container-max-widths , 'xl'); 
-}
-
 .header-page{
     display: flex;
     flex-flow: row nowrap;
@@ -38,7 +27,7 @@
    display: flex;
    flex-flow: nowrap row;
    justify-content: space-between;
-    margin: 40px auto 20px auto;
+    margin: 30px auto 25px auto;
 }
 
 
@@ -54,3 +43,166 @@
         color: $dark-blue;
     }
 }
+
+
+
+
+/* ----------- Google Pixel ----------- */
+
+    /* Portrait */
+    @media screen 
+    and (device-width: 360px) 
+    and (device-height: 640px) 
+    and (-webkit-device-pixel-ratio: 3) 
+    and (orientation: portrait) {
+
+    }
+
+    /* Landscape */
+    @media screen 
+    and (device-width: 360px) 
+    and (device-height: 640px) 
+    and (-webkit-device-pixel-ratio: 3) 
+    and (orientation: landscape) {
+
+    }
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+    /* Portrait */
+    @media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 667px) 
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) { 
+
+    }
+
+    /* Landscape */
+    @media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 667px) 
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) { 
+
+    }
+
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+    /* Portrait */
+    @media only screen 
+    and (min-width: 768px) 
+    and (max-width: 1024px)  {
+
+        .header-page{
+            flex-flow: column-reverse nowrap;
+           text-align: center;
+
+           .premium-button{
+               margin-top: 10px;
+           }
+           .secondary-button{
+               display: none;
+           } 
+            }
+
+            .sections-tags{
+                 margin: 30px auto 20px auto;
+             }
+
+        .text-buttons-group{
+            flex-flow: column nowrap;
+            margin: 10px auto 30px auto;
+            text-align: center;
+        }
+
+        .text-buttons-group{
+            p{
+                font-size: map-get($font-sizes, 'xs' );
+            }
+            .secondary-button{
+                font-size: map-get($font-sizes, 'xs' );
+            }
+        }
+
+    }
+
+    /* Landscape */
+    @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (orientation: landscape) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+
+    }
+
+/* ----------- iPad Pro 10.5" ----------- */
+
+    /* Portrait */
+    /* Declare the same value for min- and max-width to avoid colliding with desktops */
+    /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+    @media only screen 
+    and (min-device-width: 834px) 
+    and (max-device-width: 834px) 
+    and (orientation: portrait) 
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+    }
+
+    /* Landscape */
+    /* Declare the same value for min- and max-width to avoid colliding with desktops */
+    /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+    @media only screen 
+    and (min-device-width: 1112px) 
+    and (max-device-width: 1112px) 
+    and (orientation: landscape) 
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+    }
+
+ /* ----------- iPad Pro 12.9" ----------- */
+
+    /* Portrait */
+    /* Declare the same value for min- and max-width to avoid colliding with desktops */
+    /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+    @media only screen 
+    and (min-width: 1024px) 
+    and (max-width: 1024px)  {
+
+        .header-page{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+           
+            p{
+                line-height: 46px;
+                height: 26px;
+                color: $dark-blue;
+                font-size: map-get($font-sizes, 'xs' );
+            }
+
+            .premium-button{
+                margin-top: 10px;
+                font-size: map-get($font-sizes, 'xs' );
+            }
+            .secondary-button{
+                display: inline-block;
+                font-size: map-get($font-sizes, 'xs' );
+            } 
+        
+            }
+
+    }
+
+    /* Landscape */
+    /* Declare the same value for min- and max-width to avoid colliding with desktops */
+    /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+    @media only screen 
+    and (min-device-width: 1366px) 
+    and (max-device-width: 1366px) 
+    and (orientation: landscape) 
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+    }
+  

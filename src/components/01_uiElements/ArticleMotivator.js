@@ -4,12 +4,20 @@ import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 import '../../i18n';
 
-const ArticleMotivator = ({ image, tags, title, share, likes, views, youtube, spotify }) => {
+const ArticleMotivator = ({ image, tags, title, share, likes, views, youtube, spotify, small }) => {
 
   const { t } = useTranslation();
 
+  let articalClassName
+
+  if (small == "false") {
+    articalClassName = "article-motivator"
+  } else {
+    articalClassName = "article-motivator-small"
+  }
+
   return (
-    <div className="article-motivator">
+    <div className={articalClassName}>
 
       <div className="social-media">
         <a href="1" ><i className="aicon-youtube"></i></a>

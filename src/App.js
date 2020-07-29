@@ -16,7 +16,7 @@ function App() {
 
         <Navbar />
 
-        <main className="container_lg" >
+        <main className="container-app" >
           <Switch>
             <Route path="/" exact component={Home} />
 
@@ -26,8 +26,6 @@ function App() {
           </Switch>
 
           <Footer />
-
-
         </main>
 
       </Router>

@@ -1,6 +1,13 @@
+/* ----------- desktop ----------- */
+
 .news-letter{
 
    width: 310px;
+   margin: auto;
+
+   h2{
+      display: none;
+   }
 
    p{
       text-align: center;
@@ -40,6 +47,70 @@
       }
    }
 }
+
+/* ----------- tablet ----------- */
+@media only screen
+and (min-width: 768px)
+and (max-width: 1280px)  { 
+
+
+
+ } 
+/* ----------- phone ----------- */ 
+@media only screen
+and (min-width: 320px) 
+and (max-width: 767px) { 
+
+   .news-letter{
+
+      width: 310px;
+      margin: auto;
+   
+      h2{
+         display: block;
+         text-align: center;
+         font-size: map-get($font-sizes , 'xs' );
+         color: $charcoal;
+      }
+   
+      .news-letter_form{
+         height: 55px;
+         width: 310px;
+         padding: 10px 10px;
+         background-color: $white;
+         border-radius: $rounded-pill;
+   
+         button{
+            background-color: $blue;
+            color: $white;
+            font-size: map-get($font-sizes , 's' );
+            font-weight: bold;
+            padding: 8px 13px;
+            border-radius: $rounded-pill;
+         }
+   
+         input{
+            border: none;
+            width: 70%;
+            color: $dark-blue;
+            font-size: map-get($font-sizes , 'xs' );
+            direction: rtl;
+   
+            &:focus, &:hover, &:active{
+               border: none;
+               outline-width: 0;
+            }
+         }
+      }
+   }
+
+ }
+
+
+
+    
+
+
 
 
 

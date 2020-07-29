@@ -1,15 +1,17 @@
 import React from "react";
 
-const FooterLinks = () => {
+const FooterLinks = ({ extraClass = " ", listTitle = " ", listItems = [{ title: '', link: '' }] }) => {
   return (
-    <div className="footer-links">
+    <div className={"footer-links" + " " + extraClass}>
       <div className="footer-links_title">
-        في الإسلام
+        {listTitle}
       </div>
       <ul>
-        <li><a href="#">كلمة عن الإدارة</a></li>
-        <li><a href="#">شروط الإستخدام</a></li>
-        <li><a href="#">سياسة الخصوصية</a></li>
+        {listItems.map((item, key) => {
+          return (
+            <li key={key}><a href={item.link}>{item.title}</a></li>
+          )
+        })}
       </ul>
     </div>
   );
