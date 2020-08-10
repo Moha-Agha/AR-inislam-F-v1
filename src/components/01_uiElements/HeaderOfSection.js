@@ -6,7 +6,7 @@ const HeaderOfSection = () => {
   return (
     <div className="header-of-section">
 
-      <WhatsappPromotional />
+      <WhatsappPromotional classes="hide-mobile" />
       <HeaderInfo />
 
     </div>

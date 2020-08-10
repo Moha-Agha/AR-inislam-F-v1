@@ -5,6 +5,7 @@ export default {
     "heart": "aicon-heart",
     "heartLike": "aicon-heartLike",
     "info": "aicon-info",
+    "language": "aicon-language",
     "link": "aicon-link",
     "message": "aicon-message",
     "print": "aicon-print",

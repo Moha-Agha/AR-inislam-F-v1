@@ -1,5 +1,13 @@
 /* ----------- desktop ----------- */
 
+
+.sections-tags{
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+    margin: 30px auto 25px auto;
+ }
+
 .sections-tag{
     display: inline-flex;
     flex-flow: row nowrap;
@@ -40,6 +48,22 @@ and (min-width: 768px)
 and (max-width: 1280px)  { 
 
 
+     .sections-tag{
+        display: none;
+
+        
+        &:nth-child(1){
+            display: inline-flex;
+        }
+        &:nth-child(2){
+            display: inline-flex;
+        }
+    
+        .sections-tag_title{
+                font-size: map-get($font-sizes, 'xs' );
+            }
+        
+    }
 
  } 
 /* ----------- phone ----------- */ 

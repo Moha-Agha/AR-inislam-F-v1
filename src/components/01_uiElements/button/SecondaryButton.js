@@ -1,9 +1,21 @@
 import React from "react";
 
-const SecondaryButton = ({ title = "الانضمام لمجموعة الوتساب" }) => {
+const SecondaryButton = ({ title = " ", icon = "" }) => {
+
+  let isIcon
+  let secondaryButtonClass
+
+  if (icon == "") {
+    isIcon = ""
+    secondaryButtonClass = "secondary-button"
+  } else {
+    isIcon = <i className={icon}></i>
+    secondaryButtonClass = "secondary-button-icon"
+  }
+
   return (
-    <a href="#" className="secondary-button">
-      {title}
+    <a href="#" className={secondaryButtonClass}>
+      {title} {isIcon}
     </a>
   );
 };

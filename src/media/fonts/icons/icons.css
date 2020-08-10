@@ -39,6 +39,9 @@
 .aicon-info:before {
   content: '\F00E'
 }
+.aicon-language:before {
+  content: '\F014'
+}
 .aicon-link:before {
   content: '\F010'
 }

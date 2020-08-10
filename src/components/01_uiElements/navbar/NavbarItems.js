@@ -1,45 +1,19 @@
-import React, { useRef, Fragment } from "react";
-
+import React, { useRef } from "react";
 
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
-import '../../i18n';
+import '../../../i18n';
 
-
-import Register from './forms/Register'
-import Login from './forms/Login'
-import Logo from './Logo'
-
-const Navbar = () => {
-
-  const flyoutBG = useRef(null)
-  const navbar = useRef(null)
-
-  return (
-
-    <nav >
-      <div className="navbar" ref={navbar}>
-        <Logo logo='logo_nav' type='.png' />
-        <NavbarItems flyoutBG={flyoutBG} navbar={navbar} />
-        <Navbarlanguage />
-      </div>
-      <div className="flyout-bg" ref={flyoutBG}></div>
-    </nav >
-
-
-  );
-};
+import Register from '../forms/Register'
+import Login from '../forms/Login'
 
 const NavbarItems = ({ flyoutBG, navbar }) => {
-
 
   const profile = useRef(null)
   const search = useRef(null)
   const section = useRef(null)
 
   let isFlyoutBg
-
-
 
   document.addEventListener("click", function (event) {
     var target = event.target;
@@ -97,6 +71,7 @@ const NavbarItems = ({ flyoutBG, navbar }) => {
 
   return (
     <nav className="navbar_items" >
+
       <div className="navbar_item">
         <div className="navbar_item-level1" ref={profile} >
           <div ><i className="aicon-user"></i></div>
@@ -106,6 +81,7 @@ const NavbarItems = ({ flyoutBG, navbar }) => {
           <Register />
         </div>
       </div>
+
       <div className="navbar_item">
         <div className="navbar_item-level1" ref={search}>
           <div ><i className="aicon-search"></i></div>
@@ -115,6 +91,7 @@ const NavbarItems = ({ flyoutBG, navbar }) => {
           <div className="Content">بحث</div>
         </div>
       </div>
+
       <div className="navbar_item">
         <div className="navbar_item-level1" ref={section}>
           <div ><i className="aicon-section"></i></div>
@@ -124,26 +101,10 @@ const NavbarItems = ({ flyoutBG, navbar }) => {
           <div className="Content">الأقسام</div>
         </div>
       </div>
+
     </nav>
   )
 }
 
-const Navbarlanguage = () => {
 
-  const handleClick = (lang) => {
-    i18next.changeLanguage(lang)
-  }
-  return (
-    <div className="navbar_container_language">
-      <div className="navbar_language">
-        <select id="dropdown-content">
-          <option value="arabic" onClick={() => handleClick('ar')}>عربي</option>
-          <option value="English" onClick={() => handleClick('en')}>English</option>
-          <option value="deutsch" onClick={() => handleClick('de')}>deutsch</option>
-        </select>
-      </div>
-    </div>
-  )
-}
-
-export default Navbar;
+export default NavbarItems;

@@ -41,7 +41,7 @@ const Article = () => {
     return <Preloader />;
   } else {
     return (
-      <div className="article">
+      <article className="article">
 
         <Sharing />
         <Breadcrumb />
@@ -53,7 +53,7 @@ const Article = () => {
         <EditSuggestion />
         <ArticleMore />
 
-      </div>
+      </article>
     )
   }
 };

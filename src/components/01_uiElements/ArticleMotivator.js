@@ -26,9 +26,8 @@ const ArticleMotivator = ({ image, tags, title, share, likes, views, youtube, sp
 
       <div >
         <div className="tags">
-          <span className="tag">الصيام</span>
+          <span className="tag">الأكثر مشاهدة</span>
           <span className="tag">الأخلاق</span>
-          <span className="tag">السلام</span>
         </div>
 
         <a href="artical" className="title">كيف تحقق المكاسب السياسية العدالة التي تصنع هي التي تكرس بالدين؟</a>

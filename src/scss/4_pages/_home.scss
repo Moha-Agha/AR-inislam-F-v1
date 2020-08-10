@@ -1,5 +1,6 @@
 @import "../2_base/0_index.scss";
 
+/* ----------- desktop ----------- */
 
 .header-page{
     display: flex;
@@ -22,15 +23,6 @@
         margin: 10px auto 20px auto;
         }
 
-
-.sections-tags{
-   display: flex;
-   flex-flow: nowrap row;
-   justify-content: space-between;
-    margin: 30px auto 25px auto;
-}
-
-
 .text-buttons-group{
     display: flex;
     flex-flow: row nowrap;
@@ -44,61 +36,19 @@
     }
 }
 
+.nav-mobile{
+    display: none;
+}
 
-
-
-/* ----------- Google Pixel ----------- */
-
-    /* Portrait */
-    @media screen 
-    and (device-width: 360px) 
-    and (device-height: 640px) 
-    and (-webkit-device-pixel-ratio: 3) 
-    and (orientation: portrait) {
-
-    }
-
-    /* Landscape */
-    @media screen 
-    and (device-width: 360px) 
-    and (device-height: 640px) 
-    and (-webkit-device-pixel-ratio: 3) 
-    and (orientation: landscape) {
-
-    }
-
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-
-    /* Portrait */
-    @media only screen 
-    and (min-device-width: 375px) 
-    and (max-device-width: 667px) 
-    and (-webkit-min-device-pixel-ratio: 2)
-    and (orientation: portrait) { 
-
-    }
-
-    /* Landscape */
-    @media only screen 
-    and (min-device-width: 375px) 
-    and (max-device-width: 667px) 
-    and (-webkit-min-device-pixel-ratio: 2)
-    and (orientation: landscape) { 
-
-    }
-
-
-/* ----------- iPad 1, 2, Mini and Air ----------- */
-
-    /* Portrait */
-    @media only screen 
-    and (min-width: 768px) 
-    and (max-width: 1024px)  {
+/* ----------- tablet ----------- */
+@media only screen
+and (min-width: 768px)
+and (max-width: 1280px)  { 
 
         .header-page{
             flex-flow: column-reverse nowrap;
            text-align: center;
-
+    
            .premium-button{
                margin-top: 10px;
            }
@@ -107,102 +57,89 @@
            } 
             }
 
-            .sections-tags{
-                 margin: 30px auto 20px auto;
-             }
-
         .text-buttons-group{
-            flex-flow: column nowrap;
+            flex-flow: column-reverse nowrap;
             margin: 10px auto 30px auto;
             text-align: center;
-        }
-
-        .text-buttons-group{
+        
             p{
-                font-size: map-get($font-sizes, 'xs' );
-            }
-            .secondary-button{
-                font-size: map-get($font-sizes, 'xs' );
+                margin-bottom: 25px;
             }
         }
 
-    }
-
-    /* Landscape */
-    @media only screen 
-    and (min-device-width: 768px) 
-    and (max-device-width: 1024px) 
-    and (orientation: landscape) 
-    and (-webkit-min-device-pixel-ratio: 1) {
-
-    }
-
-/* ----------- iPad Pro 10.5" ----------- */
-
-    /* Portrait */
-    /* Declare the same value for min- and max-width to avoid colliding with desktops */
-    /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-    @media only screen 
-    and (min-device-width: 834px) 
-    and (max-device-width: 834px) 
-    and (orientation: portrait) 
-    and (-webkit-min-device-pixel-ratio: 2) {
-
-    }
-
-    /* Landscape */
-    /* Declare the same value for min- and max-width to avoid colliding with desktops */
-    /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-    @media only screen 
-    and (min-device-width: 1112px) 
-    and (max-device-width: 1112px) 
-    and (orientation: landscape) 
-    and (-webkit-min-device-pixel-ratio: 2) {
-
-    }
-
- /* ----------- iPad Pro 12.9" ----------- */
-
-    /* Portrait */
-    /* Declare the same value for min- and max-width to avoid colliding with desktops */
-    /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-    @media only screen 
-    and (min-width: 1024px) 
-    and (max-width: 1024px)  {
-
-        .header-page{
+        .nav-mobile{
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;
+            align-items: center;
+    
+            margin: 0px 20px 20px 20px;
+            height: 45px;
+    
+            .logo{
+               
+                img{
+                    width: 85px;
+                    margin-top: 12px;
+                }
+            }
+        }
+
+ } 
+/* ----------- phone ----------- */ 
+@media only screen
+and (min-width: 320px) 
+and (max-width: 767px) { 
+
+ 
+    .header-page{
+        flex-flow: column-reverse nowrap;
+       text-align: center;
+
+       .premium-button{
+           margin-top: 10px;
+       }
+       .secondary-button{
+           display: none;
+       } 
+        }
+
+        .sections-tags{
+             margin: 30px auto 20px auto;
+         }
+
+    .text-buttons-group{
+        flex-flow: column-reverse nowrap;
+        margin: 10px auto 30px auto;
+        text-align: center;
+        p{
+            text-align: center;
+            font-size: map-get($font-sizes, 'xs' );
+        }
+        .secondary-button{
+            margin: 20px 20px;
+            display: block;
+            font-size: map-get($font-sizes, 'xs' );
+        }
+    }
+
+    .nav-mobile{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        margin: 0px 20px 20px 20px;
+        height: 45px;
+
+        .logo{
            
-            p{
-                line-height: 46px;
-                height: 26px;
-                color: $dark-blue;
-                font-size: map-get($font-sizes, 'xs' );
+            img{
+                width: 85px;
+                margin-top: 12px;
             }
-
-            .premium-button{
-                margin-top: 10px;
-                font-size: map-get($font-sizes, 'xs' );
-            }
-            .secondary-button{
-                display: inline-block;
-                font-size: map-get($font-sizes, 'xs' );
-            } 
-        
-            }
-
+        }
     }
 
-    /* Landscape */
-    /* Declare the same value for min- and max-width to avoid colliding with desktops */
-    /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-    @media only screen 
-    and (min-device-width: 1366px) 
-    and (max-device-width: 1366px) 
-    and (orientation: landscape) 
-    and (-webkit-min-device-pixel-ratio: 2) {
+ }
 
-    }
-  

@@ -18,7 +18,7 @@ const Home = () => {
       <div className="header-page">
         <div>
           <PremiumButton />
-          <SecondaryButton />
+          <SecondaryButton title="الانضمام لمجموعة الوتساب" />
         </div>
         <p>{t("home.websiteInfo")}</p>
       </div>
@@ -40,8 +40,7 @@ const Home = () => {
           <SecondaryButton title="دعم تطوير الموقع" />
           <SecondaryButton title="الإنضمام الى فريق المترحمين" />
         </div>
-        <p>{t("home.websiteInfo")}</p>
-
+        <p>{t("home.workTogether")}</p>
       </div>
 
 

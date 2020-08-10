@@ -6,7 +6,7 @@ const SectionsTags = () => {
   return (
     <div className="sections-tags">
       <div className="sections-tags_mobil">
-        <SectionTag title='جميع الاقسام' />
+        <SectionTag title='عرض جيمع الاقسام' />
       </div>
       <div className="hide-mobile">
         <SectionTag title='قسم الخرافات' />
